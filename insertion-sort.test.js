@@ -12,6 +12,6 @@ test('sort an already ordered array', () => {
   expect(sort([1, 2, 3])).toEqual([1, 2, 3]);
 });
 
-// test('sort an unordered array', () => {
-//   expect(sort([1, 4, 2, 5, 3])).toEqual([1, 2, 3, 4, 5]);
-// });
+test('sort an unordered array', () => {
+  expect(sort([1, 4, 2, 5, 3])).toEqual([1, 2, 3, 4, 5]);
+});

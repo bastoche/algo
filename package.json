@@ -1,8 +1,12 @@
 {
   "dependencies": {
+    "@rdbird/eslint-config": "^2.0.0",
+    "eslint": "^3.19.0",
     "jest": "^19.0.2"
   },
   "scripts": {
+    "format": "eslint . --fix",
+    "lint": "eslint .",
     "test": "jest --watch"
   }
 }

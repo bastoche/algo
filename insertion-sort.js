@@ -3,7 +3,7 @@ function sort(array) {
   if (length < 2) {
     return array;
   }
-  for (let j = 1; j < length; ++j) {
+  for (let j = 1; j < length; j += 1) {
     const value = array[j];
     // insert value at the right position amongs the j - 1 first elements
     let i = j - 1;

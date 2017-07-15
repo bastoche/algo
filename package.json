@@ -1,5 +1,6 @@
 {
   "name": "algo",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "jest --watch",

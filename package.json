@@ -6,7 +6,8 @@
     "dev": "jest --watch",
     "format": "eslint . --fix",
     "lint": "eslint .",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "devDependencies": {
     "eslint": "^4.2.0",

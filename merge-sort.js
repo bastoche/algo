@@ -8,18 +8,29 @@ function sort(array, withoutSentinels = false) {
 
 function mergeSort(array, lowerBound, upperBound, withoutSentinels) {
   if (upperBound <= lowerBound) {
-    return;
+    return 0;
   }
 
   const middle = Math.floor((lowerBound + upperBound) / 2);
-  mergeSort(array, lowerBound, middle, withoutSentinels);
-  mergeSort(array, middle + 1, upperBound, withoutSentinels);
+  const leftRecursiveDepth = mergeSort(
+    array,
+    lowerBound,
+    middle,
+    withoutSentinels
+  );
+  const rightRecursiveDepth = mergeSort(
+    array,
+    middle + 1,
+    upperBound,
+    withoutSentinels
+  );
 
   if (withoutSentinels) {
     mergeWithoutSentinels(array, lowerBound, middle, upperBound);
   } else {
     merge(array, lowerBound, middle, upperBound);
   }
+  return Math.max(leftRecursiveDepth, rightRecursiveDepth) + 1;
 }
 
 function merge(array, lowerBound, middle, upperBound) {

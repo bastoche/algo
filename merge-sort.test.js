@@ -29,3 +29,9 @@ test("sort an unordered array without sentinels", () => {
   sort(array, true);
   expect(array).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
 });
+
+test("have a number of recursions logarithmic of the array length", () => {
+  const array = [1, 4, 8, 7, 6, 2, 5, 3];
+  const recursiveDepth = sort(array);
+  expect(recursiveDepth).toEqual(3);
+});

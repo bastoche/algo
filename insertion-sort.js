@@ -1,7 +1,7 @@
 function sort(array) {
   const length = array.length;
   if (length < 2) {
-    return array;
+    return;
   }
   for (let j = 1; j < length; j += 1) {
     const value = array[j];
@@ -13,7 +13,6 @@ function sort(array) {
     }
     array[i + 1] = value;
   }
-  return array;
 }
 
 module.exports = sort;

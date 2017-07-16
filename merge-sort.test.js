@@ -1,4 +1,4 @@
-const sort = require("./insertion-sort");
+const sort = require("./merge-sort");
 
 test("sort an empty array", () => {
   const array = [];
